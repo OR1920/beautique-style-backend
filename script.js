@@ -19,15 +19,18 @@ async function matchMakeup() {
   formData.append("event", eventSel.value);
   formData.append("n_styles", 3);
 
-  // שולחים לשרת שלך ב-Render
+  // שולח את התמונה לשרת AI שלך ב-Render
   const response = await fetch("https://beautique-style-backend.onrender.com/match", {
     method: "POST",
     body: formData
   });
 
-  const data = await response.json(); // התשובה מכילה תמונות, כותרות והסברים
+  if (!response.ok) {
+    alert("Something went wrong. Please try again later.");
+    return;
+  }
 
-  // ניקוי קודם
+  const data = await response.json(); // [{url, title, reason}]
   cardsContainer.innerHTML = '';
 
   data.forEach(look => {
