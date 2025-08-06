@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautikue • AI Beauty Match</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="logo-wrap">
+      <img src="logo.png" alt="Beautikue Logo" class="nav-logo" />
+      <span class="brand">Beautikue</span>
+    </div>
+    <nav>
+      <a href="#how">How&nbsp;It&nbsp;Works</a>
+      <a href="#try">Try&nbsp;It</a>
+      <a href="#video">Video&nbsp;Guide</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Find Your Perfect Makeup Match</h1>
+    <p>Upload a selfie and let our AI recommend stunning looks for every occasion.</p>
+    <a href="#try" class="cta">Start Now</a>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="how">
+    <h2>How Beautikue Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Upload</h3>
+        <p>Choose a clear photo of your face. Our algorithm detects facial features, skin tone &amp; undertone.</p>
+      </div>
+      <div class="step">
+        <h3>2. Analyze</h3>
+        <p>Beautikue’s AI compares thousands of makeup looks, event types &amp; trending styles.</p>
+      </div>
+      <div class="step">
+        <h3>3. Match</h3>
+        <p>Get 3 curated looks – from natural daytime glow to glam evening elegance – each with product tips.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Try it -->
+  <section id="try" class="try">
+    <h2>Try It Yourself</h2>
+    <div class="upload-box">
+      <input type="file" id="imageUpload" accept="image/*" />
+      <select id="eventSelect">
+        <option value="" disabled selected>Select Event Type</option>
+        <option value="wedding">Wedding</option>
+        <option value="office">Office / Daytime</option>
+        <option value="party">Party Night</option>
+      </select>
+      <button onclick="matchMakeup()">Match My Look</button>
+    </div>
+    <div id="results" class="results hidden">
+      <h3>Your AI Makeup Suggestions</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="placeholder1.jpg" alt="Look 1">
+          <h4>Elegant Evening</h4>
+          <p>Smokey eyes &amp; bold lips – perfect for night events.</p>
+        </div>
+        <div class="card">
+          <img src="placeholder2.jpg" alt="Look 2">
+          <h4>Soft Daytime</h4>
+          <p>Subtle pink hues &amp; natural finish for office or brunch.</p>
+        </div>
+        <div class="card">
+          <img src="placeholder3.jpg" alt="Look 3">
+          <h4>Radiant Bride</h4>
+          <p>Dewy skin &amp; shimmer for unforgettable weddings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="video-section">
+    <h2>Coming Soon: Video Tutorials</h2>
+    <p>We’re creating bite‑sized guides on how to achieve each AI‑recommended look.</p>
+    <div class="video-placeholder">🎬 Video content arriving shortly…</div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Stay in Touch</h2>
+    <p>Have questions or want early access to our mobile app? <br/>Write us: <a href="mailto:hello@beautikue.style">hello@beautikue.style</a></p>
+  </section>
+
+  <footer>
+    © 2025 Beautikue • All rights reserved
+  </footer>
+</body>
+</html>
