@@ -4,7 +4,8 @@ from uuid import uuid4
 from diffusers import StableDiffusionImg2ImgPipeline
 import torch, PIL.Image as Image, io, os
 
-app = FastAPI()
+app = app = FastAPI()
+
 app.add_middleware(CORSMiddleware, allow_origins=["*"],
                    allow_methods=["*"], allow_headers=["*"])
 
